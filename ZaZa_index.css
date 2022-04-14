@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap);
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -283,29 +281,25 @@ body .container-fluid .banner-mask img {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   body .container-fluid {
-    width: 100%;
     height: 1334px;
   }
   body .container-fluid nav {
     font-size: 22px;
   }
   body .container-fluid nav .img-logo {
-    width: 105px;
-    height: 110px;
-    padding-left: 80px;
+    padding: 0px 0px 0px 80px;
   }
   body .container-fluid nav img:nth-child(1) {
     display: none;
   }
   body .container-fluid nav img:nth-child(2) {
     display: block;
-    padding-top: 26.5px;
   }
   body .container-fluid nav .bager-bar {
     display: block;
-    padding-right: 80px;
+    padding: 0px 80px 0px 0px;
   }
   body .container-fluid nav .bager-bar svg {
     visibility: visible;
@@ -314,7 +308,7 @@ body .container-fluid .banner-mask img {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
-    top: 2px;
+    top: 120px;
     left: 0px;
     max-height: 0px;
     overflow: hidden;
@@ -322,11 +316,13 @@ body .container-fluid .banner-mask img {
     transition: max-height 1.5s;
   }
   body .container-fluid nav .menu li {
-    padding: 5px 0px;
+    text-align: center;
+    padding: 8px 0px;
     margin: 0px;
   }
   body .container-fluid nav .menu.show {
     max-height: 400px;
+    overflow: visible;
   }
   body .container-fluid nav .mySwiper {
     width: 100%;
@@ -689,4 +685,4 @@ body footer {
   color: #99a8b0;
   margin-top: 241px;
 }
-/*# sourceMappingURL=frontpage.css.map */
+/*# sourceMappingURL=ZaZa_index.css.map */

@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap);
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 * {
     box-sizing: border-box;
     margin: 0;
@@ -289,18 +287,15 @@ body {
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         .container-fluid {
-            width: 100%;
             height: 1334px;
 
             nav {
                 font-size: 22px;
 
                 .img-logo {
-                    width: 105px;
-                    height: 110px;
-                    padding-left: 80px;
+                    padding: 0px 0px 0px 80px;
                 }
 
                 img:nth-child(1) {
@@ -309,12 +304,12 @@ body {
 
                 img:nth-child(2) {
                     display: block;
-                    padding-top: 26.5px;
                 }
 
                 .bager-bar {
-                    display: block;
-                    padding-right: 80px;
+                    display:block;
+                    padding: 0px 80px 0px 0px;
+
                     svg {
                         visibility: visible;
                     }
@@ -325,7 +320,7 @@ body {
                     background-color: rgba(255, 255, 255, 0.7);
 
                     position: absolute;
-                    top: 2px;
+                    top: 120px;
                     left: 0px;
 
                     max-height: 0px;
@@ -333,12 +328,14 @@ body {
                     transition: max-height 1.5s;
 
                     li {
-                        padding: 5px 0px;
+                        text-align: center;
+                        padding: 8px 0px;
                         margin: 0px;
                     }
                 }
                 .menu.show{
                     max-height: 400px;
+                    overflow: visible;
                 }
 
                 .mySwiper {
