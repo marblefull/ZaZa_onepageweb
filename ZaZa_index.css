@@ -7,7 +7,6 @@
 }
 
 body {
-  width: 1280px;
   background: #fff;
   font-family: "CH-FangSong", "Noto Sans TC", "Moulpali", "Text Me One", "Josefin Slab", impact, sans-serif;
   color: #adbcc4;
@@ -168,6 +167,8 @@ body .container-fluid nav {
   height: 120px;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
+  margin: 0px;
+  padding: 0px 118px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -175,23 +176,29 @@ body .container-fluid nav {
 }
 
 body .container-fluid nav .img-logo {
-  width: 105px;
-  height: 110px;
-  padding-left: 118px;
+  padding: 0px;
+}
+
+body .container-fluid nav .img-logo img {
+  padding: 0;
+}
+
+body .container-fluid nav .img-logo .bager-bar {
+  display: none;
+}
+
+body .container-fluid nav .img-logo .bager-bar svg {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
 }
 
 body .container-fluid nav img:nth-child(2) {
   display: none;
 }
 
-body .container-fluid nav .bager-bar {
-  display: none;
-}
-
-body .container-fluid nav .bager-bar svg {
-  visibility: hidden;
-  width: 40px;
-  height: 40px;
+body .container-fluid nav .menu {
+  padding: 0px;
 }
 
 body .container-fluid nav li {
@@ -218,19 +225,30 @@ body .container-fluid .mySwiper .swiper-button-prev:after {
 body .container-fluid .mySwiper .my-button-next {
   position: absolute;
   top: 468px;
-  right: 167px;
+  right: 173px;
+  z-index: 6;
+}
+
+body .container-fluid .mySwiper .my-button-next img {
+  width: 40px;
 }
 
 body .container-fluid .mySwiper .my-button-prev {
   position: absolute;
   top: 468px;
   left: 1041px;
+  z-index: 6;
+}
+
+body .container-fluid .mySwiper .my-button-prev img {
+  width: 40px;
 }
 
 body .container-fluid .mySwiper .my-pagination {
   position: absolute;
   top: 495px;
-  left: 1035px;
+  left: 1037px;
+  z-index: 6;
   font-size: 30px;
   color: #7e96a3;
   padding: 4px;
@@ -244,37 +262,43 @@ body .container-fluid .mySwiper .my-pagination {
 body .container-fluid .banner-title {
   width: 554px;
   position: absolute;
-  left: 138px;
-  top: 509px;
-  z-index: 2;
+  left: 120px;
+  top: 438px;
 }
 
 body .container-fluid .banner-title img {
   width: 530px;
-  z-index: 5;
-}
-
-body .container-fluid .banner-title img:nth-child(2) {
-  margin: 18.5px 0px 0px 88px;
-}
-
-body .container-fluid .banner-title .title-bg {
-  width: 511px;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  top: 27px;
-  left: 30px;
-  z-index: 2;
-}
-
-body .container-fluid .banner-mask {
-  width: 1280px;
-  height: 1183px;
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
+  z-index: 6;
+}
+
+body .container-fluid .banner-title img:nth-child(2) {
+  position: absolute;
+  top: 76px;
+  left: 88px;
+  z-index: 6;
+}
+
+body .container-fluid .banner-title .title-bg {
+  width: 518px;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  z-index: 5;
+}
+
+body .container-fluid .banner-mask {
+  width: 100%;
+  height: 1038px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
 }
 
 body .container-fluid .banner-mask img {
@@ -287,22 +311,22 @@ body .container-fluid .banner-mask img {
   }
   body .container-fluid nav {
     font-size: 22px;
+    padding: 0px 90px;
   }
   body .container-fluid nav .img-logo {
-    padding: 0px 0px 0px 80px;
+    padding: 0px;
+  }
+  body .container-fluid nav .img-logo .bager-bar {
+    display: block;
+  }
+  body .container-fluid nav .img-logo .bager-bar svg {
+    visibility: visible;
   }
   body .container-fluid nav img:nth-child(1) {
     display: none;
   }
   body .container-fluid nav img:nth-child(2) {
     display: block;
-  }
-  body .container-fluid nav .bager-bar {
-    display: block;
-    padding: 0px 80px 0px 0px;
-  }
-  body .container-fluid nav .bager-bar svg {
-    visibility: visible;
   }
   body .container-fluid nav .menu {
     width: 100%;
@@ -324,11 +348,39 @@ body .container-fluid .banner-mask img {
     max-height: 400px;
     overflow: visible;
   }
-  body .container-fluid nav .mySwiper {
+  body .container-fluid .banner-title {
+    width: 554px;
+    position: absolute;
+    left: 98px;
+    top: 709px;
+  }
+  body .container-fluid .mySwiper {
     width: 100%;
   }
-  body .container-fluid nav .mySwiper .swiper-slide img {
+  body .container-fluid .mySwiper .swiper-slide img {
     height: 1334px;
+  }
+  body .container-fluid .mySwiper .my-button-next {
+    position: absolute;
+    top: 781px;
+    right: 122px;
+    z-index: 6;
+  }
+  body .container-fluid .mySwiper .my-button-next img {
+    width: 45px;
+  }
+  body .container-fluid .mySwiper .my-button-prev {
+    display: none;
+  }
+  body .container-fluid .mySwiper .my-pagination {
+    width: 65px;
+    height: 55px;
+    font-size: 24px;
+    line-height: 40px;
+    position: absolute;
+    top: 748px;
+    left: 700px;
+    z-index: 6;
   }
 }
 

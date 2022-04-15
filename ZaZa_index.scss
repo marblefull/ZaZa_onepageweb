@@ -5,9 +5,7 @@
 }
 
 body {
-    width: 1280px;
     background: #fff;
-
     font-family: "CH-FangSong", "Noto Sans TC", "Moulpali", "Text Me One", "Josefin Slab", impact, sans-serif;
     color: #adbcc4;
     font-size: 14px;
@@ -173,6 +171,8 @@ body {
             height: 120px;
             background-color: rgba(255, 255, 255, 0.7);
             font-size: 18px;
+            margin: 0px;
+            padding: 0px 118px;
 
             position: fixed;
             top: 0px;
@@ -180,23 +180,28 @@ body {
             z-index: 99;
 
             .img-logo {
-                width: 105px;
-                height: 110px;
-                padding-left: 118px;
+                padding: 0px;
+
+                img {
+                    padding: 0;
+                }
+                .bager-bar {
+                    display: none;
+
+                    svg {
+                        visibility: hidden;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
             }
 
             img:nth-child(2) {
                 display: none;
             }
 
-            .bager-bar {
-                display: none;
-
-                svg {
-                    visibility: hidden;
-                    width: 40px;
-                    height: 40px;
-                }
+            .menu {
+                padding: 0px;
             }
 
             li {
@@ -210,6 +215,7 @@ body {
             height: 1037px;
 
             position: relative;
+
             .swiper-slide {
                 img {
                     height: 1037px;
@@ -225,17 +231,30 @@ body {
             .my-button-next {
                 position: absolute;
                 top: 468px;
-                right: 167px;
+                right: 173px;
+                z-index: 6;
+
+                img {
+                    width: 40px;
+                }
             }
+
             .my-button-prev {
                 position: absolute;
                 top: 468px;
                 left: 1041px;
+                z-index: 6;
+
+                img {
+                    width: 40px;
+                }
             }
+
             .my-pagination {
                 position: absolute;
                 top: 495px;
-                left: 1035px;
+                left: 1037px;
+                z-index: 6;
 
                 font-size: 30px;
                 color: #7e96a3;
@@ -250,36 +269,49 @@ body {
 
         .banner-title {
             width: 554px;
+
             position: absolute;
-            left: 138px;
-            top: 509px;
-            z-index: 2;
+            left: 120px;
+            top: 438px;
 
             img {
                 width: 530px;
-                z-index: 5;
-            }
-            img:nth-child(2) {
-                margin: 18.5px 0px 0px 88px;
-            }
-            .title-bg {
-                width: 511px;
-                height: 70px;
-                background-color: rgba(255, 255, 255, 0.6);
+
                 position: absolute;
-                top: 27px;
+                top: 0px;
+                left: 0px;
+                z-index: 6;
+            }
+
+            img:nth-child(2) {
+                // margin: 18.5px 0px 0px 88px;
+
+                position: absolute;
+                top: 76px;
+                left: 88px;
+                z-index: 6;
+            }
+
+            .title-bg {
+                width: 518px;
+                height: 75px;
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 2px;
+
+                position: absolute;
+                top: 31px;
                 left: 30px;
-                z-index: 2;
+                z-index: 5;
             }
         }
         .banner-mask {
-            width: 1280px;
-            height: 1183px;
+            width: 100%;
+            height: 1038px;
 
             position: absolute;
             top: 0px;
             left: 0px;
-            z-index: 2;
+            z-index: 5;
 
             img {
                 height: 100%;
@@ -293,9 +325,18 @@ body {
 
             nav {
                 font-size: 22px;
+                padding: 0px 90px;
 
                 .img-logo {
-                    padding: 0px 0px 0px 80px;
+                    padding: 0px;
+
+                    .bager-bar {
+                        display: block;
+
+                        svg {
+                            visibility: visible;
+                        }
+                    }
                 }
 
                 img:nth-child(1) {
@@ -304,15 +345,6 @@ body {
 
                 img:nth-child(2) {
                     display: block;
-                }
-
-                .bager-bar {
-                    display:block;
-                    padding: 0px 80px 0px 0px;
-
-                    svg {
-                        visibility: visible;
-                    }
                 }
 
                 .menu {
@@ -333,19 +365,53 @@ body {
                         margin: 0px;
                     }
                 }
-                .menu.show{
+                .menu.show {
                     max-height: 400px;
                     overflow: visible;
                 }
+            }
 
-                .mySwiper {
-                    width: 100%;
+            .banner-title {
+                width: 554px;
 
-                    .swiper-slide {
-                        img {
-                            height: 1334px;
-                        }
+                position: absolute;
+                left: 98px;
+                top: 709px;
+            }
+
+            .mySwiper {
+                width: 100%;
+
+                .swiper-slide {
+                    img {
+                        height: 1334px;
                     }
+                }
+
+                .my-button-next {
+                    position: absolute;
+                    top: 781px;
+                    right: 122px;
+                    z-index: 6;
+
+                    img {
+                        width: 45px;
+                    }
+                }
+
+                .my-button-prev {
+                    display: none;
+                }
+                .my-pagination {
+                    width: 65px;
+                    height: 55px;
+                    font-size: 24px;
+                    line-height: 40px;
+
+                    position: absolute;
+                    top: 748px;
+                    left: 700px;
+                    z-index: 6;
                 }
             }
         }
@@ -368,6 +434,7 @@ body {
 
         #ABOUT {
             padding: 68px 50px 0px 50px;
+
             img:nth-child(2) {
                 float: none;
             }
