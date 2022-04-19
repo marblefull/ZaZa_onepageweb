@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- css -->
-    <link href="./Hover-master/css/hover-min.css" rel="stylesheet">
+    <link href="./css/Hover-master/css/hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="./ZaZa_index.css">
 
     <link rel="shortcut icon" href="#">
@@ -31,11 +31,11 @@
         <img style="width:100%; position: absolute; top: 0; left: 0; z-index: -1;" src="./image/bg-all.png" alt="">
         <nav class="row no-gutters d-flex align-items-center">
             <div
-                class="no-gutters img-logo col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-lg-start justify-content-md-between justify-content-sm-between">
+                class="no-gutters img-logo col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-lg-start justify-content-md-between justify-content-between">
                 <img src="./image/logo.png" alt="">
                 <img src="./image/logo-horizontal.png" alt="">
                 <div class="bager-bar d-flex justify-content-end">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#adbcc4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffffff">
                         <path
                             d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
                     </svg>
@@ -45,25 +45,25 @@
             <div class="menu col-xl-8 col-lg-8 col-md-12 d-flex justify-content-md-center">
                 <ul class="d-flex flex-xl-row flex-lg-row flex-md-column">
                     <li>
-                        <a class="hvr-reveal" href="">ABOUT</a>
+                        <a class="hvr-float" href="">ABOUT</a>
                     </li>
                     <li>
-                        <a class="hvr-reveal" href="">SUBJECT</a>
+                        <a class="hvr-float" href="">SUBJECT</a>
                     </li>
                     <li>
-                        <a class="hvr-reveal" href="">SHOP</a>
+                        <a class="hvr-float" href="">SHOP</a>
                     </li>
                     <li>
-                        <a class="hvr-reveal" href="">SPACE</a>
+                        <a class="hvr-float" href="">SPACE</a>
                     </li>
                     <li>
-                        <a class="hvr-reveal" href="">NEWS</a>
+                        <a class="hvr-float" href="">NEWS</a>
                     </li>
                     <li>
-                        <a class="hvr-reveal" href="">INSTERGRAM</a>
+                        <a class="hvr-float" href="">INSTERGRAM</a>
                     </li>
                     <li>
-                        <a class="hvr-reveal" href="">CONTANT</a>
+                        <a class="hvr-float" href="">CONTANT</a>
                     </li>
                 </ul>
             </div>
@@ -93,10 +93,12 @@
                 </div>
             </div>
 
-            <div class="banner-title">
-                <img src="./image/banner-img/banner-title-L.png" alt="#">
+            <div class="banner-title fade-in-left">
+                <img src="./image/banner-img/banner-title-up.png" alt="">
+                <img src="./image/banner-img/banner-title-down.png" alt="">
+                <!-- <img src="./image/banner-img/banner-title-L.png" alt="#">
                 <img src="./image/banner-img/banner-title-S.png" alt="#">
-                <div class="title-bg"></div>
+                <div class="title-bg"></div> -->
             </div>
 
             <div class="banner-mask">
@@ -105,13 +107,11 @@
 
             <div class="swiper-button-next my-button-next" tabindex="0" role="button" aria-label="Next slide"
                 aria-controls="swiper-wrapper-f1099f3cbb43fa845" aria-disabled="false">
-                <img style="filter: invert(67%) sepia(12%) saturate(564%) hue-rotate(157deg) brightness(85%) contrast(85%);"
-                    src="./image/banner-img/caret-square-right-regular.svg" alt="">
+                <img src="./image/banner-img/caret-square.svg" alt="">
             </div>
             <div class="swiper-button-prev my-button-prev" tabindex="0" role="button" aria-label="Previous slide"
                 aria-controls="swiper-wrapper-f1099f3cbb43fa845" aria-disabled="false">
-                <img style="filter: invert(67%) sepia(12%) saturate(564%) hue-rotate(157deg) brightness(85%) contrast(85%);"
-                    src="./image/banner-img/caret-square-left-regular.svg" alt="">
+                <img src="./image/banner-img/caret-square.svg" alt="">
             </div>
             <div class="swiper-pagination my-pagination swiper-pagination-fraction swiper-pagination-horizontal">
                 / <span class="swiper-pagination-current">1</span>
@@ -158,8 +158,8 @@
             <div id="ABOUT" class="row no-gutters">
                 <div class="col-12 d-flex justify-content-lg-end">
                     <div class="d-flex align-items-end">
-                        <img src="./image/about-img/about-04.png" alt="">
-                        <img src="./image/about-img/about-05.png" alt="">
+                        <img class="about-img_1 fade-in-left-delay" src="./image/about-img/about-04.png" alt="">
+                        <img class="fade-in-left-delay" src="./image/about-img/about-05.png" alt="">
                     </div>
                     <div class="about-content d-flex flex-column">
                         <h1>手作</h1>
@@ -171,26 +171,26 @@
 
                 <div
                     class="col-12 about-gap d-flex justify-content-start align-items-center flex-md-row-reverse flex-sm-row-reverse">
-                    <div class="d-flex align-items-end">
-                        <img src="./image/about-img/about-06.png" alt="">
-                        <img src="./image/about-img/about-01.png" alt="">
+                    <div class="d-flex">
+                        <img class="fade-in-left" src="./image/about-img/about-06.png" alt="">
+                        <img class="about-img_2 fade-in-left-delay" src="./image/about-img/about-01.png" alt="">
                     </div>
-                    <div class="about-content d-flex flex-column">
+                    <div class="about-content d-flex flex-column justify-content-start">
                         <h1>環保</h1>
                         <h6>手作結合環保，輕巧又具有質感的日常<br>收納，讓我們也為地球盡一份心力。<br>
                         </h6>
                     </div>
                 </div>
 
-                <div class="col-12 about-gap d-flex justify-content-end align-items-center">
+                <div class="col-12 about-gap d-flex justify-content-end align-items-center flex-sm-row-reverse">
                     <div class="about-content d-flex flex-column align-items-end">
                         <h1>美學</h1>
                         <h6>手作結合環保，輕巧又具有質感的日常<br>收納，讓我們也為地球盡一份心力。<br>
                         </h6>
                     </div>
                     <div class="d-flex align-items-end">
-                        <img src="./image/about-img/about-02.png" alt="">
-                        <img src="./image/about-img/about-03.png" alt="">
+                        <img class="fade-in-left-delay" src="./image/about-img/about-03.png" alt="">
+                        <img class="about-img_3 fade-in-left-delay" src="./image/about-img/about-02.png" alt="">
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@
             <div id="SUBJECT" class="row no-gutters">
                 <div class="col-12 d-flex no-gutters">
                     <div class="col-4 d-flex flex-column align-items-center">
-                        <img src="./image/subject-img/subject-01.png" alt="">
-                        <div class="subject-title_1  d-flex justify-content-center align-items-center">俄羅斯戳戳樂</div>
-                        <div class="subject-content">
+                        <img class="fade-in-top" src="./image/subject-img/subject-01.png" alt="">
+                        <div class="subject-title_1  d-flex justify-content-center align-items-center fade-in-top-delay">俄羅斯戳戳樂</div>
+                        <div class="subject-content fade-in-top-delay">
                             <h6>跟一般所認知的刺繡有點不太一樣，因為戳針刺上繡布的時候會發出"Punch、Punch"的聲音所以英文名稱就叫Punch Needle。
                                 透過刺繡的過程中，一筆一針，就像與自己對話，觀察生活中的細節，擷取其中靈感，將之呈現在作品上。
                                 歡迎一同來體驗手作，體驗美。
@@ -209,17 +209,17 @@
                     </div>
 
                     <div class="col-4 d-flex flex-column align-items-center subject-gap">
-                        <img src="./image/subject-img/subject-03.png" alt="">
-                        <div class="subject-title_2 d-flex justify-content-center align-items-center">香氛蠟燭DIY</div>
-                        <div class="subject-content">
+                        <img class="fade-in-top-delay" src="./image/subject-img/subject-03.png" alt="">
+                        <div class="subject-title_2 d-flex justify-content-center align-items-center fade-in-top-delay-sec">香氛蠟燭DIY</div>
+                        <div class="subject-content fade-in-top-delay-sec">
                             <h6>加一點喜歡的味道，加一點喜歡的樣子，動手做出獨一無二的屬於你的香氛蠟燭擺件。</h6>
                         </div>
                     </div>
 
                     <div class="col-4 d-flex flex-column align-items-center">
-                        <img src="./image/subject-img/subject-02.png" alt="">
-                        <div class="subject-title_3  d-flex justify-content-center align-items-center">手工編織趣</div>
-                        <div class="subject-content">
+                        <img class="fade-in-top-delay-sec" src="./image/subject-img/subject-02.png" alt="">
+                        <div class="subject-title_3  d-flex justify-content-center align-items-center fade-in-top-delay-thr">手工編織趣</div>
+                        <div class="subject-content fade-in-top-delay-thr">
                             <h6>挑選你喜愛的色系，經過手編織的溫度，成為身上獨特又實用的配件，時尚又實用～
                                 <p>若是送禮也能傳達手心的溫度喔！
                             </h6>
@@ -230,12 +230,12 @@
 
             <div id="SHOP" class="row no-gutters">
                 <div class="col-12 no-gutters d-flex flex-column">
-                    <div class="shop-title">
-                        <img src="./image/shop-img/title-shop.png" alt="">
+                    <div class="shop-title fade-in-top">
+                        <img class="fade-in-top" src="./image/shop-img/title-shop.png" alt="">
                     </div>
                     <div
                         class="shop-content d-flex no-gutters flex-lg-row flex-sm-column align-item-sm-center justify-content-sm-center">
-                        <div class="no-gutters goods-select_1 d-flex flex-wrap">
+                        <div class="no-gutters goods-select_1 d-flex flex-wrap fade-in-left">
                             <img src="./image/shop-img/product_embroude-05.jpg" alt="X">
                             <img src="./image/shop-img/product_embroude-02.jpg" alt="X">
                             <img src="./image/shop-img/product_embroude-035.jpg" alt="X">
@@ -250,7 +250,7 @@
                             <img src="./image/shop-img/product_weave-07.jpg" alt="X">
                         </div>
                         <div class="row no-gutters shopimg-row">
-                            <div class="no-gutters goods-select_2 d-flex flex-wrap justify-content-center">
+                            <div class="no-gutters goods-select_2 d-flex flex-wrap justify-content-center fade-in-left-delay">
                                 <img src="./image/shop-img/product_candel-01.jpg" alt="X">
                                 <img src="./image/shop-img/product_candel-03.jpg" alt="X">
                                 <img src="./image/shop-img/product_candel-07.jpg" alt="X">
@@ -258,13 +258,13 @@
                                 <img src="./image/shop-img/product_weave-15.jpg" alt="X">
                                 <img src="./image/shop-img/other-03.jpg" alt="X">
                             </div>
-                            <div class="no-gutters d-flex goods-select_3 d-flex flex-wrap justify-content-center">
+                            <div class="no-gutters d-flex goods-select_3 d-flex flex-wrap justify-content-center fade-in-left">
                                 <img src="./image/shop-img/product_socks-03.jpg" alt="X">
                                 <img src="./image/shop-img/product_socks-06.jpg" alt="X">
                                 <img src="./image/shop-img/product_socks-08.jpg" alt="X">
                                 <img src="./image/shop-img/product_socks-09.jpg" alt="X">
                                 <a class="shop-btn" href="https://www.pinkoi.com/store/zaza-handcrafted">
-                                    <img src="./image/shop-img/btn-pinkoi.png" alt=""></a>
+                                    <img class="fade-in-left-delay-sec" src="./image/shop-img/btn-pinkoi.png" alt=""></a>
                             </div>
                         </div>
                         <!-- <a class="shop-btn" href="https://www.pinkoi.com/store/zaza-handcrafted">
@@ -275,38 +275,24 @@
 
             <div id="SPACE" class="row">
                 <div class="space-title">
-                    <img src="./image/space-img/title-space.png" alt="SPACE">
+                    <img class="fade-in-top" src="./image/space-img/title-space.png" alt="SPACE">
                 </div>
 
                 <div
                     class="swiper space-swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
                     <div class="swiper-wrapper" id="swiper-wrapper-b05f9ff4703110694" aria-live="polite">
-                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4"
-                            style="width: 278px; margin-right: 30px;">
+                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4">
                             <img src="./image/space-img/space-012.jpg" alt="">
                         </div>
-                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4"
-                            style="width: 278px; margin-right: 30px;">
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4">
                             <img src="./image/space-img/space-06.jpg" alt="">
                         </div>
-                        <div class="swiper-slide" role="group" aria-label="3 / 4"
-                            style="width: 278px; margin-right: 30px;">
+                        <div class="swiper-slide" role="group" aria-label="3 / 4">
                             <img src="./image/space-img/space-08.jpg" alt="">
                         </div>
-                        <div class="swiper-slide" role="group" aria-label="4 / 4"
-                            style="width: 278px; margin-right: 30px;">
+                        <div class="swiper-slide" role="group" aria-label="4 / 4">
                             <img src="./image/space-img/space-09.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="my-pagination-bullet"><img src="./image/btn-012.png" alt=""></div>
-                    <div
-                        class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-custom">
-                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active my-pagination-bullet" tabindex="0"
-                            role="button" aria-label="Go to slide 1" aria-current="true"></span>
-                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"><img src="./image/btn-012.png" alt=""></span>
-                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
-                        <span class="my-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
                     </div>
                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                 </div>
@@ -316,126 +302,140 @@
                         slidesPerView: 2,
                         spaceBetween: 30,
                         freeMode: true,
+                        freeModeSticky: true,
                         mousewheel: {
                             invert: true,
                         },
 
-                        speed: 5000,
+                        speed: 6000,
                         autoplay: {
                             delay: 0,
                             disaableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         },
 
-                        loop:true,
+                        loop: true,
 
                         pagination: {
                             el: ".swiper-pagination",
                             clickable: true,
+                            type: 'custom',
                         },
+
+                        breakpoints: {
+                            576: {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                                centeredSlides: true,
+                            },
+
+                            992: {
+                                slidesPerView: 2,
+                                spaceBetween: 30,
+                            },
+                        }
                     });
                 </script>
             </div>
-        </div>
 
-        <div id="NEWS" class="row no-gutters d-flex justify-content-center align-items-sm-center">
-            <img class="news-title" src="./image/news-img/news-04.png" alt="">
-            <div class="col-12 no-gutters newsgroup d-flex justify-content-center ">
-                <img src="./image/news-img/news-01.png" alt="">
-                <img src="./image/news-img/news-05.png" alt="">
-                <img src="./image/news-img/news-02.png" alt="">
-                <img src="./image/news-img/news-06.png" alt="">
-                <img src="./image/news-img/news-03.png" alt="">
-                <img src="./image/news-img/news-07.png" alt="">
-                <div class="news-content d-flex align-items-center justify-content-center">
-                    <h6>Water Bottle Holder<br>手提編織袋，八月份<br>開課囉！</h6>
-                </div>
-            </div>
-        </div>
-
-        <div id="INS" class="row no-gutters">
-            <div class="col-12 no-gutters d-flex align-items-center flex-lg-row flex-sm-column-reverse">
-                <div class="no-gutters col-lg-6 col-sm-9 ins-left">
-                    <img src="./image/ins-img/product_candel-07.jpg" alt="">
-                    <img src="./image/ins-img/product_weave-04.jpg" alt="">
-                    <img src="./image/ins-img/product_weave-20.jpg" alt="">
-                    <img src="./image/ins-img/space-014.jpg" alt="">
-                </div>
-                <div class="no-gutters col-lg-6 col-sm-10 align-item-sm-center ins-right">
-                    <img src="./image/ins-img/btn-05.png" alt="">
-                    <div class="ins-content d-flex justify-content-lg-start justify-content-sm-center">
-                        <img src="./image/bg-06.png" alt="">
-                        <div class="d-flex flex-column">
-                            <h6>收藏關於我們的新消息和新作品</h6>
-                            <h6>新作品都會在IG和大家即時分享，<br>
-                                歡迎來了解和我們互動喔。</h6>
-                        </div>
+            <div id="NEWS" class="row no-gutters d-flex justify-content-center align-items-sm-center">
+                <img class="news-title wobble-hor-bottom" src="./image/news-img/news-04.png" alt="">
+                <div class="col-12 no-gutters newsgroup d-flex justify-content-center ">
+                    <img class="fade-in-left" src="./image/news-img/news-01.png" alt="">
+                    <img class="jello-horizontal" src="./image/news-img/news-05.png" alt="">
+                    <img class="fade-in-left-delay" src="./image/news-img/news-02.png" alt="">
+                    <img class="jello-horizontal-delay" src="./image/news-img/news-06.png" alt="">
+                    <img class="fade-in-left-delay-sec" src="./image/news-img/news-03.png" alt="">
+                    <img class="jello-horizontal-delay-sec" src="./image/news-img/news-07.png" alt="">
+                    <div class="news-content d-flex align-items-center justify-content-center">
+                        <h6>Water Bottle Holder<br>手提編織袋，八月份<br>開課囉！</h6>
                     </div>
+                </div>
+            </div>
+
+            <div id="INS" class="row no-gutters">
+                <div class="col-12 no-gutters d-flex align-items-center flex-lg-row flex-sm-column-reverse">
+                    <div class="no-gutters col-lg-6 col-sm-9 ins-left fade-in-left-delay">
+                        <img src="./image/ins-img/product_candel-07.jpg" alt="">
+                        <img src="./image/ins-img/product_weave-04.jpg" alt="">
+                        <img src="./image/ins-img/product_weave-20.jpg" alt="">
+                        <img src="./image/ins-img/space-014.jpg" alt="">
+                    </div>
+                    <div class="no-gutters col-lg-6 col-sm-10 align-item-sm-center ins-right">
+                        <img class="fade-in-top" src="./image/ins-img/btn-05.png" alt="">
+                        <div class="ins-content d-flex justify-content-lg-start justify-content-sm-center fade-in-left-delay-sec">
+                            <img src="./image/bg-06.png" alt="">
+                            <div class="d-flex flex-column">
+                                <h6>收藏關於我們的新消息和新作品</h6>
+                                <h6>新作品都會在IG和大家即時分享，<br>
+                                    歡迎來了解和我們互動喔。</h6>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/zaza_handcrafted/?igshid=7jzqb08wkgwl">
+                            <img class="fade-in-left-delay-thr" src="./image/ins-img/btn-06.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="CONTANT" class="row no-gutters">
+                <div class="col-12 no-gutters socil-link d-flex justify-content-between">
                     <a href="https://www.instagram.com/zaza_handcrafted/?igshid=7jzqb08wkgwl">
-                        <img src="./image/ins-img/btn-06.png" alt="">
+                        <img class="fade-in-left" src="./image/contact-img/btn-08.png" alt="">
                     </a>
-                </div>
-            </div>
-        </div>
-        <div id="CONTANT" class="row no-gutters">
-            <div class="col-12 no-gutters socil-link d-flex justify-content-between">
-                <a href="https://www.instagram.com/zaza_handcrafted/?igshid=7jzqb08wkgwl">
-                    <img src="./image/contact-img/btn-08.png" alt="">
-                </a>
-                <a href="https://www.instagram.com/zaza_handcrafted/?igshid=7jzqb08wkgwl">
-                    <img src="./image/contact-img/btn-09.png" alt="">
-                </a>
-                <a href="https://www.pinkoi.com/store/zaza-handcrafted">
-                    <img src="./image/contact-img/btn-07.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-12 no-gutters d-flex justify-content-between">
-                <div class="Info d-flex flex-column">
-                    <h5>ZaZa Handcrafted 手工藝創作工作室</h5>
-                    <h6 class="align-item-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-geo-alt" viewBox="0 0 16 16">
-                            <path
-                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                        </svg>
-                        台中市西區華美西街一段85號6樓之2
-                    </h6>
-
-                    <h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-calendar2-check" viewBox="0 0 16 16">
-                            <path
-                                d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
-                            <path
-                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
-                            <path
-                                d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
-                        </svg>
-                        不定期開課，以官網公佈為準。
-                    </h6>
-
-                    <h6>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                        </svg>
-                        <span>04-2301-6998</span>
-                    </h6>
-                    <a href="http://127.0.0.1:5500/frontpage.html">
-                        <img src="./image/bg-08.png" alt="">
+                    <a href="https://www.instagram.com/zaza_handcrafted/?igshid=7jzqb08wkgwl">
+                        <img class="fade-in-left-delay" src="./image/contact-img/btn-09.png" alt="">
+                    </a>
+                    <a href="https://www.pinkoi.com/store/zaza-handcrafted">
+                        <img class="fade-in-left-delay-sec" src="./image/contact-img/btn-07.png" alt="">
                     </a>
                 </div>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.490518855307!2d120.65682731458914!3d24.154524184391754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d3e8b82aca1%3A0x6bfe27e20c92d90c!2zemF6YeaJi-W3peiXneWJteS9nA!5e0!3m2!1szh-TW!2stw!4v1649584451535!5m2!1szh-TW!2stw"
-                    width="500px" height="330px" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="col-12 no-gutters d-flex justify-content-between">
+                    <div class="Info d-flex flex-column fade-in-top">
+                        <h5>ZaZa Handcrafted 手工藝創作工作室</h5>
+                        <h6 class="align-item-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                            台中市西區華美西街一段85號6樓之2
+                        </h6>
+
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar2-check" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                                <path
+                                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
+                            </svg>
+                            不定期開課，以官網公佈為準。
+                        </h6>
+
+                        <h6>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            <span>04-2301-6998</span>
+                        </h6>
+                        <a href="http://127.0.0.1:5500/frontpage.html">
+                            <img class="fade-in-bl" src="./image/bg-08.png" alt="">
+                        </a>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.490518855307!2d120.65682731458914!3d24.154524184391754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d3e8b82aca1%3A0x6bfe27e20c92d90c!2zemF6YeaJi-W3peiXneWJteS9nA!5e0!3m2!1szh-TW!2stw!4v1649584451535!5m2!1szh-TW!2stw"
+                        width="500px" height="330px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-        </div>
         </div>
     </main>
 
